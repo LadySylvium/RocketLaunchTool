@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  list-style-type: none;
+  font-family: Verdana, Arial, sans-serif;
+  color: rgb(100,150,150);
+}
+
+html {
+  background: white;
+}
+
+body {
+  min-height: 97vh;
+  background: linear-gradient(-175deg, rgb(210,210,210) 80%, rgb(150,190,190) 80%);
+}
+
+header {
+  margin-top: 3vh;
+  padding: 50px 35px 15px;
+  background: linear-gradient(175deg, white 50%, rgb(210,210,210) 50%);
+}
+
+header > * {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+}
+
+header h1, header p {
+  text-shadow:  -1px -1px rgb(100,150,150),
+                1px -1px rgb(100,150,150),
+                1px 1px rgb(100,150,150),
+                -1px 1px rgb(100,150,150);
+}
+
+header h1 {
+  font-size: 1.8em;
+  padding-top: 20px;
+}
+
+div#main {
+  padding: 10px 20px;
+}
+
+div#launches, div#countdownDiv {
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px dotted #eee;
+  border-radius: 10px;
+}
+
+div#launches li {
+  padding: 10px 0;
+  border-bottom: 2px dotted #eee;
+}
+
+div#launches li:first-of-type {
+  padding-top: 0;
+}
+
+div#launches li:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+p, span {
+  font-weight: bold;
+  color: white;
+  text-shadow:  -1px -1px rgb(100,150,150),
+                1px -1px rgb(100,150,150),
+                1px 1px rgb(100,150,150),
+                -1px 1px rgb(100,150,150);
+}
+
+div#launches span.launchName {
+  font-style: italic;
+}
+
+div#launches span.time {
+  font-size: 1.2em;
+}
+
+
+span#countdown {
+  font-style: italic;
+}
+
+div#buttons {
+  padding-top: 5px;
+  text-align: center;
+}
+
+div#buttons button {
+  color: white;
+  font-variant: small-caps;
+  padding: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+  border-radius: 4px;
+  background-color: rgb(150,190,190);
+  border: 2px outset rgb(150,190,190);
+}
+
+div#buttons button:active {
+  border: 2px inset rgb(150,190,190);
+}
+
+footer {
+  margin: 20px auto 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.7em;
+  border-top: 1px dashed white;
+}
+
+footer p {
+  text-shadow: none;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 992px) {
+  div#main, header > * {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

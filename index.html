@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Rocket Launches</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>Upcoming Rocket Launches</h1>
+    <p>Next launch: <span id="next-date"></span></p>
+  </header>
+  <div id="main">
+    <div id="launches">
+      <ul></ul>
+    </div>
+    <div id="countdownDiv">
+      <p>Countdown to launch: <span id="countdown"></span></p>
+    </div>
+    <div id="buttons">
+      <button type="button" onclick="getLaunches()">Next 5 Launches</button>
+      <button type="button" onclick="getLaunches('falcon')">Next 5 Falcon Launches</button>
+      <button type="button" onclick="getLaunches('launcherone')">Next 5 LauncherOne Launches</button>
+      <button type="button" onclick="getLaunches('ariane')">Next 5 Ariane Launches</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Megan Kern 2018</p>
+  </footer>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
